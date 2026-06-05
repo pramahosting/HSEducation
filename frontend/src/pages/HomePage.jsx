@@ -19,7 +19,7 @@ const HomePage = ({ setPage }) => (
       <div className="hero-dots"/>
       <div className="hero-inner">
         <div>
-          <div className="hero-badge">🇦🇺 Registered Australian Charity</div>
+          <div className="hero-badge">Registered Australian Charity</div>
           <h1 className="hero-title">Transforming Lives Through<br/><strong>Education & Opportunity</strong></h1>
           <p className="hero-desc">HS Education funds scholarships, learning support programs, and community initiatives to ensure every Australian student — regardless of background — has the chance to thrive.</p>
           <div className="hero-actions">
