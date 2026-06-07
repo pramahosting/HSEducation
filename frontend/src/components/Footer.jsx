@@ -6,18 +6,18 @@ const Footer = ({ setPage }) => (
       <div className="footer-grid">
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '1rem', cursor: 'pointer' }} onClick={() => setPage('Home')}>
-            <Logo size={40} />
+            <Logo size={28} />
             <div>
-              <div style={{ fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: '1.1rem' }}>HS Education</div>
-              <div style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.45)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>hseducation.com.au</div>
+              <div style={{ fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: '0.85rem' }}>HS Education</div>
+              <div style={{ fontSize: '0.62rem', color: 'rgba(255,255,255,0.45)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>hseducation.com.au</div>
             </div>
           </div>
           <p className="footer-brand">Empowering Australian learners through scholarships, literacy programs, Indigenous education, and vocational pathways.</p>
-          <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
             <div className="footer-acnc">🇦🇺 ACNC Registered</div>
             <div className="footer-acnc">✅ DGR Endorsed</div>
           </div>
-          <div style={{ marginTop: '1rem', fontSize: '0.82rem', color: 'rgba(255,255,255,0.4)' }}>ABN: 12 345 678 901</div>
+          <div style={{ marginTop: '0.4rem', fontSize: '0.68rem', color: 'rgba(255,255,255,0.4)' }}>ABN: 12 345 678 901</div>
         </div>
         <div>
           <div className="footer-col-title">Navigation</div>
@@ -42,11 +42,11 @@ const Footer = ({ setPage }) => (
             <li><a>📧 info@hseducation.com.au</a></li>
             <li><a>📞 (02) 8880 1234</a></li>
           </ul>
-          <div style={{ marginTop: '1.5rem' }}>
+          <div style={{ marginTop: '0.75rem' }}>
             <div className="footer-col-title">Follow Us</div>
             <div style={{ display: 'flex', gap: '0.5rem' }}>
               {['in', 'f', '𝕏', 'ig'].map(s => (
-                <div key={s} style={{ width: 34, height: 34, background: 'rgba(255,255,255,0.1)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.75rem', color: 'rgba(255,255,255,0.65)', cursor: 'pointer', fontWeight: 700 }}>{s}</div>
+                <div key={s} style={{ width: 24, height: 24, background: 'rgba(255,255,255,0.1)', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.65rem', color: 'rgba(255,255,255,0.65)', cursor: 'pointer', fontWeight: 700 }}>{s}</div>
               ))}
             </div>
           </div>
