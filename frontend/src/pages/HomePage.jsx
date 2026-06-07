@@ -26,11 +26,7 @@ const HomePage = ({ setPage }) => (
             <button className="btn-primary" onClick={() => setPage('Donate')}><Icon name="heart" size={18}/> Donate Today</button>
             <button className="btn-outline" onClick={() => setPage('Projects')}>Our Programs <Icon name="arrow" size={16}/></button>
           </div>
-          <div className="hero-stats">
-            {[['4,200+','Students Supported'],['$3.8M','Funds Distributed'],['87%','To Programs']].map(([v,l]) => (
-              <div key={l} className="hero-stat"><div className="hero-stat-num">{v}</div><div className="hero-stat-label">{l}</div></div>
-            ))}
-          </div>
+
         </div>
         {/* Hero right — image card */}
         <div className="hero-img-card">
