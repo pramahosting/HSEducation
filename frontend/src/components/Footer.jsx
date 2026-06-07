@@ -53,8 +53,8 @@ const Footer = ({ setPage }) => (
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2024 HS Education. All rights reserved. Registered Australian Charity.</span>
-        <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
+        <span>© 2026 HS Education. All rights reserved. Registered Australian Charity.</span>
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
           <a style={{ cursor: 'pointer' }}>Privacy Policy</a>
           <a style={{ cursor: 'pointer' }}>Terms of Use</a>
           <a style={{ cursor: 'pointer' }}>Complaints</a>
