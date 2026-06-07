@@ -52,7 +52,7 @@ const GlobalStyles = () => (
     /* HERO */
     .hero { min-height: 100vh; position: relative; overflow: hidden; padding-top: 72px; display: flex; align-items: center; }
     .hero-bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
-    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(236,253,245,0.96) 0%, rgba(209,250,229,0.94) 60%, rgba(254,249,195,0.92) 100%); }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(254,249,195,0.97) 0%, rgba(254,249,195,0.96) 40%, rgba(209,250,229,0.95) 70%, rgba(6,95,70,0.90) 100%); }
     .hero-dots { position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 32px 32px; }
     .hero-inner { max-width: 1200px; margin: 0 auto; padding: 5rem 2rem; position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
     .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(5,150,105,0.12); border: 1px solid rgba(5,150,105,0.3); color: #065f46; padding: 0.4rem 1rem; border-radius: 100px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 1.5rem; }
@@ -143,7 +143,7 @@ const GlobalStyles = () => (
     .page-hero { position: relative; overflow: hidden; padding: 5rem 2rem 6rem; margin-top: 72px; }
     .page-hero-bg { position: absolute; inset: 0; }
     .page-hero-bg img { width: 100%; height: 100%; object-fit: cover; }
-    .page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(236,253,245,0.96) 0%, rgba(209,250,229,0.94) 60%, rgba(254,249,195,0.92) 100%); }
+    .page-hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(254,249,195,0.97) 0%, rgba(254,249,195,0.96) 40%, rgba(209,250,229,0.95) 70%, rgba(6,95,70,0.90) 100%); }
     .page-hero-content { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; text-align: center; }
 
     /* IMPACT BANNER */
@@ -157,7 +157,7 @@ const GlobalStyles = () => (
     .donate-hero { position: relative; overflow: hidden; padding: 4rem 2rem 5rem; margin-top: 72px; }
     .donate-hero-bg { position: absolute; inset: 0; }
     .donate-hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
-    .donate-hero-overlay { position: absolute; inset: 0; background: linear-gradient(160deg, rgba(236,253,245,0.96) 0%, rgba(209,250,229,0.94) 60%, rgba(254,249,195,0.92) 100%); }
+    .donate-hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(254,249,195,0.97) 0%, rgba(254,249,195,0.96) 40%, rgba(209,250,229,0.95) 70%, rgba(6,95,70,0.90) 100%); }
     .donate-hero-content { position: relative; z-index: 1; max-width: 640px; margin: 0 auto; text-align: center; }
 
     /* FORMS */
@@ -216,13 +216,13 @@ const GlobalStyles = () => (
     .footer { background: var(--gray-800); color: white; padding: 2rem 2rem 1rem; }
     .footer-inner { max-width: 1200px; margin: 0 auto; }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
-    .footer-brand { color: rgba(255,255,255,0.65); font-size: 0.7rem; line-height: 1.5; margin-top: 0.5rem; }
-    .footer-col-title { font-weight: 600; font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold-light); margin-bottom: 0.6rem; }
+    .footer-brand { color: rgba(255,255,255,0.65); font-size: 0.78rem; line-height: 1.5; margin-top: 0.5rem; }
+    .footer-col-title { font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold-light); margin-bottom: 0.6rem; }
     .footer-links { list-style: none; }
     .footer-links li { margin-bottom: 0.25rem; }
-    .footer-links a { color: rgba(255,255,255,0.65); font-size: 0.66rem; cursor: pointer; transition: color 0.2s; }
+    .footer-links a { color: rgba(255,255,255,0.65); font-size: 0.76rem; cursor: pointer; transition: color 0.2s; }
     .footer-links a:hover { color: white; }
-    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 0.65rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.72rem; color: rgba(255,255,255,0.5); flex-wrap: wrap; gap: 0.5rem; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 0.75rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.72rem; color: rgba(255,255,255,0.5); flex-wrap: wrap; gap: 0.5rem; }
     .footer-acnc { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 0.25rem 0.6rem; border-radius: 6px; font-size: 0.7rem; color: rgba(255,255,255,0.75); }
 
     /* CARDS GRID */
