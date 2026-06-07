@@ -1,20 +1,19 @@
 # ============================================================
 # HS Education — Dockerfile
-# Two named build targets in one file:
+# Single file with two named build targets
 #
-#   TARGET: frontend
-#   Northflank → Dockerfile path: Dockerfile
-#   Northflank → Docker target:   frontend
+# TARGET: frontend  → React built by Node, served by Nginx
+# TARGET: backend   → Node.js Express API
 #
-#   TARGET: backend
-#   Northflank → Dockerfile path: Dockerfile
-#   Northflank → Docker target:   backend
-#
-# Build context: . (root) for both services
+# Northflank settings:
+#   Both services:  Dockerfile path = Dockerfile
+#                   Build context   = . (root)
+#   Frontend:       Docker target   = frontend
+#   Backend:        Docker target   = backend
 # ============================================================
 
 
-# ── STAGE 1: Build React app ─────────────────────────────
+# ── Shared base: build React app ─────────────────────────
 FROM node:20-alpine AS react-builder
 
 WORKDIR /app
@@ -34,8 +33,6 @@ RUN npm run build
 
 
 # ── TARGET: frontend ─────────────────────────────────────
-# Nginx serves the React build
-# Northflank service 1 — port 3000 — PUBLIC
 FROM nginx:1.25-alpine AS frontend
 
 RUN rm /etc/nginx/conf.d/default.conf
@@ -53,8 +50,6 @@ CMD ["nginx", "-g", "daemon off;"]
 
 
 # ── TARGET: backend ──────────────────────────────────────
-# Node.js Express API + PostgreSQL
-# Northflank service 2 — port 5000 — INTERNAL
 FROM node:20-alpine AS backend
 
 WORKDIR /app

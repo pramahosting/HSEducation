@@ -1,0 +1,23 @@
+# ============================================================
+# HS Education — Backend Requirements
+# Install: npm install  (from backend/js folder)
+# ============================================================
+
+# Web framework
+express@4.18.2
+
+# PostgreSQL client
+pg@8.11.3
+
+# Security & middleware
+helmet@7.1.0
+cors@2.8.5
+morgan@1.10.0
+
+# Development only
+nodemon@3.0.2
+
+# ── Notes ─────────────────────────────────────────────────
+# All packages are pure Node.js — no Python or system deps needed
+# pg requires no native compilation (uses pure JS mode by default)
+# Production install: npm install --omit=dev  (excludes nodemon)
