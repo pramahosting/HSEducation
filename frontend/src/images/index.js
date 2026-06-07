@@ -1,31 +1,86 @@
+// ============================================================
+// HS Education — Image Library
+// Uses inline SVG data URIs — no external dependencies,
+// works on any domain including Northflank deployments.
+// ============================================================
+
+// Helper: creates a branded SVG image with gradient background
+function svg(label, icon, from, to) {
+  const s = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+    <defs>
+      <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:${from}"/>
+        <stop offset="100%" style="stop-color:${to}"/>
+      </linearGradient>
+    </defs>
+    <rect width="800" height="500" fill="url(#g)"/>
+    <rect width="800" height="500" fill="rgba(0,0,0,0.18)"/>
+    <text x="400" y="220" text-anchor="middle" fill="rgba(255,255,255,0.15)"
+      font-family="Georgia,serif" font-size="120">${icon}</text>
+    <text x="400" y="310" text-anchor="middle" fill="rgba(255,255,255,0.9)"
+      font-family="Georgia,serif" font-size="28" font-style="italic">${label}</text>
+  </svg>`;
+  return 'data:image/svg+xml,' + encodeURIComponent(s);
+}
+
+// Small helper for portrait/square images (team, testimonials)
+function svgSq(initials, from, to) {
+  const s = `<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+    <defs>
+      <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:${from}"/>
+        <stop offset="100%" style="stop-color:${to}"/>
+      </linearGradient>
+    </defs>
+    <rect width="300" height="300" fill="url(#g)"/>
+    <text x="150" y="170" text-anchor="middle" fill="rgba(255,255,255,0.9)"
+      font-family="Georgia,serif" font-size="72" font-weight="bold">${initials}</text>
+  </svg>`;
+  return 'data:image/svg+xml,' + encodeURIComponent(s);
+}
+
+const NAVY  = '#1a3a5c';
+const TEAL  = '#0d7377';
+const GOLD  = '#c8900a';
+const DARK  = '#0f2440';
+const GREEN = '#1a5c3a';
+const PURP  = '#3a1a5c';
+
 const IMGS = {
-  heroStudents:   'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&q=80',
-  missionKids:    'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80',
-  communityGroup: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80',
-  aboutFounders:  'https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=800&q=80',
-  impactBanner:   'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&q=80',
-  aboutMission:   'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80',
-  donateHero:     'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=900&q=80',
-  scholarship:    'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=700&q=80',
-  literacy:       'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=700&q=80',
-  indigenous:     'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=700&q=80',
-  vocational:     'https://images.unsplash.com/photo-1581092335397-9fa341108e1e?w=700&q=80',
-  infrastructure: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=700&q=80',
-  mathsProgram:   'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=700&q=80',
-  regional:       'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=700&q=80',
-  twoWay:         'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=700&q=80',
-  pathways:       'https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&q=80',
-  person1:        'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&q=80',
-  person2:        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
-  person3:        'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&q=80',
-  team1:          'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80',
-  team2:          'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&q=80',
-  team3:          'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80',
-  team4:          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80',
-  team5:          'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80',
-  team6:          'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&q=80',
-  team7:          'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80',
-  team8:          'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&q=80',
+  // ── Hero & General ──────────────────────────────────────
+  heroStudents:   svg('Empowering Australian Learners',       '🎓', DARK,  TEAL),
+  missionKids:    svg('Students Learning Together',           '📚', NAVY,  TEAL),
+  communityGroup: svg('Community & Connection',               '🤝', TEAL,  NAVY),
+  aboutFounders:  svg('Our Story',                            '💡', DARK,  '#2c5282'),
+  impactBanner:   svg('4,200+ Students Supported',            '⭐', DARK,  TEAL),
+  aboutMission:   svg('Changing Lives Through Education',     '🌟', NAVY,  TEAL),
+  donateHero:     svg('Make a Difference Today',              '❤️', DARK,  TEAL),
+
+  // ── Programs ────────────────────────────────────────────
+  scholarship:    svg('Future Leaders Bursary',               '🎓', NAVY,  '#2c5282'),
+  literacy:       svg('Read to Succeed',                      '📖', TEAL,  '#0a5560'),
+  indigenous:     svg('Remote Learning Connect',              '🌏', GREEN, '#0a3a20'),
+  vocational:     svg('Skills for Life',                      '🔧', '#5c3a1a', '#8b5e2a'),
+  infrastructure: svg('Resource Rich Schools',                '🏫', '#1a3a5c', '#2d5a8e'),
+  mathsProgram:   svg('Maths Mastery Program',               '🔢', PURP,  '#2a1a4a'),
+  regional:       svg('Regional Excellence Award',            '🏆', GOLD,  '#8b6914'),
+  twoWay:         svg('Two-Way Learning Initiative',          '🪃', GREEN, TEAL),
+  pathways:       svg('Pathways to Employment',               '💼', DARK,  NAVY),
+
+  // ── Testimonials ────────────────────────────────────────
+  person1: svgSq('AM', TEAL,  NAVY),
+  person2: svgSq('JT', NAVY,  '#2c5282'),
+  person3: svgSq('DW', DARK,  TEAL),
+
+  // ── Team ────────────────────────────────────────────────
+  team1: svgSq('HS', NAVY,  TEAL),
+  team2: svgSq('ST', TEAL,  DARK),
+  team3: svgSq('SC', DARK,  '#2c5282'),
+  team4: svgSq('DK', NAVY,  '#1a5c3a'),
+  team5: svgSq('PS', TEAL,  NAVY),
+  team6: svgSq('TN', PURP,  NAVY),
+  team7: svgSq('AW', GREEN, TEAL),
+  team8: svgSq('MR', GOLD,  '#5c3a00'),
 };
 
 export default IMGS;
