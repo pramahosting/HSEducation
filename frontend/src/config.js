@@ -1,8 +1,4 @@
-// ============================================================
-// HS Education — API Configuration
-// REACT_APP_API_URL is injected at Docker build time
-// Set it in Northflank as a Build Argument:
-//   REACT_APP_API_URL=https://p02--hseducation--wd2sd44bwz9b.code.run
-// ============================================================
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+// API is on the same server — use relative URL
+// Works both locally (with proxy) and on Northflank (single service)
+const API_URL = '';
 export default API_URL;
