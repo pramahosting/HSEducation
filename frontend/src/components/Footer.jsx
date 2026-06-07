@@ -17,7 +17,7 @@ const Footer = ({ setPage }) => (
             <div className="footer-acnc">ACNC Registered</div>
             <div className="footer-acnc">✅ DGR Endorsed</div>
           </div>
-          <div style={{ marginTop: '0.4rem', fontSize: '0.68rem', color: 'rgba(255,255,255,0.4)' }}>ABN: 12 345 678 901</div>
+          <div style={{ marginTop: '0.4rem', fontSize: '0.68rem', color: 'rgba(255,255,255,0.4)' }}>ABN: xx xxx xxx xxx</div>
         </div>
         <div>
           <div className="footer-col-title">Navigation</div>
