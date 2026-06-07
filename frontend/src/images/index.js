@@ -1,33 +1,54 @@
+import heroStudents   from './photos/heroStudents.jpg';
+import missionKids    from './photos/missionKids.jpg';
+import communityGroup from './photos/communityGroup.jpg';
+import aboutFounders  from './photos/aboutFounders.jpg';
+import impactBanner   from './photos/impactBanner.jpg';
+import aboutMission   from './photos/aboutMission.jpg';
+import donateHero     from './photos/donateHero.jpg';
+import scholarship    from './photos/scholarship.jpg';
+import literacy       from './photos/literacy.jpg';
+import indigenous     from './photos/indigenous.jpg';
+import vocational     from './photos/vocational.jpg';
+import infrastructure from './photos/infrastructure.jpg';
+import mathsProgram   from './photos/mathsProgram.jpg';
+import regional       from './photos/regional.jpg';
+import twoWay         from './photos/twoWay.jpg';
+import pathways       from './photos/pathways.jpg';
+import person1        from './photos/person1.jpg';
+import person2        from './photos/person2.jpg';
+import person3        from './photos/person3.jpg';
+import team1          from './photos/team1.jpg';
+import team2          from './photos/team2.jpg';
+import team3          from './photos/team3.jpg';
+import team4          from './photos/team4.jpg';
+import team5          from './photos/team5.jpg';
+import team6          from './photos/team6.jpg';
+import team7          from './photos/team7.jpg';
+import team8          from './photos/team8.jpg';
+
 const IMGS = {
-  heroStudents:   'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=900&q=80',
-  missionKids:    'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80',
-  communityGroup: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80',
-  aboutFounders:  'https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=800&q=80',
-  impactBanner:   'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&q=80',
-  aboutMission:   'https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80',
-  donateHero:     'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=900&q=80',
-  scholarship:    'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=700&q=80',
-  literacy:       'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=700&q=80',
-  indigenous:     'https://images.unsplash.com/photo-1596495578065-6e0763fa1178?w=700&q=80',
-  vocational:     'https://images.unsplash.com/photo-1581092335397-9fa341108e1e?w=700&q=80',
-  infrastructure: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=700&q=80',
-  mathsProgram:   'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=700&q=80',
-  regional:       'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=700&q=80',
-  twoWay:         'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=700&q=80',
-  pathways:       'https://images.unsplash.com/photo-1552664730-d307ca884978?w=700&q=80',
-  person1:        'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200&q=80',
-  person2:        'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80',
-  person3:        'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=200&q=80',
-  team1:          'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80',
-  team2:          'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&q=80',
-  team3:          'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80',
-  team4:          'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80',
-  team5:          'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80',
-  team6:          'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&q=80',
-  team7:          'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80',
-  team8:          'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&q=80',
+  heroStudents,
+  missionKids,
+  communityGroup,
+  aboutFounders,
+  impactBanner,
+  aboutMission,
+  donateHero,
+  scholarship,
+  literacy,
+  indigenous,
+  vocational,
+  infrastructure,
+  mathsProgram,
+  regional,
+  twoWay,
+  pathways,
+  person1, person2, person3,
+  team1, team2, team3, team4,
+  team5, team6, team7, team8,
 };
 
 export default IMGS;
+
 
 
