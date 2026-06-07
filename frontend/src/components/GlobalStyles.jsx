@@ -213,17 +213,17 @@ const GlobalStyles = () => (
     .success-box { background: rgba(13,115,119,0.08); border: 1.5px solid var(--teal); border-radius: 12px; padding: 2rem; text-align: center; }
 
     /* FOOTER */
-    .footer { background: var(--gray-800); color: white; padding: 4rem 2rem 2rem; }
+    .footer { background: var(--gray-800); color: white; padding: 2rem 2rem 1rem; }
     .footer-inner { max-width: 1200px; margin: 0 auto; }
-    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
-    .footer-brand { color: rgba(255,255,255,0.65); font-size: 0.9rem; line-height: 1.7; margin-top: 1rem; }
-    .footer-col-title { font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold-light); margin-bottom: 1.2rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem; }
+    .footer-brand { color: rgba(255,255,255,0.65); font-size: 0.78rem; line-height: 1.5; margin-top: 0.5rem; }
+    .footer-col-title { font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gold-light); margin-bottom: 0.6rem; }
     .footer-links { list-style: none; }
-    .footer-links li { margin-bottom: 0.6rem; }
-    .footer-links a { color: rgba(255,255,255,0.65); font-size: 0.88rem; cursor: pointer; transition: color 0.2s; }
+    .footer-links li { margin-bottom: 0.25rem; }
+    .footer-links a { color: rgba(255,255,255,0.65); font-size: 0.76rem; cursor: pointer; transition: color 0.2s; }
     .footer-links a:hover { color: white; }
-    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1.5rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; color: rgba(255,255,255,0.5); flex-wrap: wrap; gap: 1rem; }
-    .footer-acnc { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 0.5rem 1rem; border-radius: 8px; font-size: 0.8rem; color: rgba(255,255,255,0.75); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 0.75rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.72rem; color: rgba(255,255,255,0.5); flex-wrap: wrap; gap: 0.5rem; }
+    .footer-acnc { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 0.25rem 0.6rem; border-radius: 6px; font-size: 0.7rem; color: rgba(255,255,255,0.75); }
 
     /* CARDS GRID */
     .cards-grid { display: grid; gap: 1.5rem; margin-top: 2.5rem; }
