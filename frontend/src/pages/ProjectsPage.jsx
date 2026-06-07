@@ -24,9 +24,9 @@ const ProjectsPage = ({ setPage }) => {
         <div className="page-hero-bg"><img src={IMGS.communityGroup} alt="Education programs"/></div>
         <div className="page-hero-overlay"/>
         <div className="page-hero-content">
-          <div className="section-label" style={{color:'#fed7aa'}}>Our Programs</div>
-          <h1 style={{fontFamily:'var(--font-display)',fontSize:'clamp(2rem,4vw,3rem)',color:'white',marginBottom:'1rem'}}>Projects Making a <em style={{color:'#fed7aa'}}>Real Difference</em></h1>
-          <p style={{color:'rgba(255,255,255,0.82)',fontSize:'1.05rem'}}>Every HS Education program is designed with evidence, co-designed with communities, and rigorously evaluated for impact.</p>
+          <div className="section-label" style={{color:'#065f46'}}>Our Programs</div>
+          <h1 style={{fontFamily:'var(--font-display)',fontSize:'clamp(2rem,4vw,3rem)',color:'#064e3b',marginBottom:'1rem'}}>Projects Making a <em style={{color:'#065f46'}}>Real Difference</em></h1>
+          <p style={{color:'#065f46',fontSize:'1.05rem'}}>Every HS Education program is designed with evidence, co-designed with communities, and rigorously evaluated for impact.</p>
         </div>
       </div>
 
@@ -69,8 +69,8 @@ const ProjectsPage = ({ setPage }) => {
         <div className="impact-banner-bg"><img src={IMGS.impactBanner} alt="Students"/></div>
         <div className="impact-banner-overlay"/>
         <div className="impact-banner-content">
-          <h2 style={{fontFamily:'var(--font-display)',fontSize:'clamp(1.8rem,3vw,2.4rem)',color:'white',marginBottom:'1rem'}}>Want to Fund a Specific Project?</h2>
-          <p style={{color:'rgba(255,255,255,0.8)',marginBottom:'2rem',fontSize:'1.05rem'}}>Direct your donation to the program that matters most to you.</p>
+          <h2 style={{fontFamily:'var(--font-display)',fontSize:'clamp(1.8rem,3vw,2.4rem)',color:'#064e3b',marginBottom:'1rem'}}>Want to Fund a Specific Project?</h2>
+          <p style={{color:'#065f46',marginBottom:'2rem',fontSize:'1.05rem'}}>Direct your donation to the program that matters most to you.</p>
           <button className="btn-primary" onClick={() => setPage('Donate')}><Icon name="heart" size={18}/> Choose a Project to Fund</button>
         </div>
       </div>

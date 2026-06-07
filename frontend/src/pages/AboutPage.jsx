@@ -8,9 +8,9 @@ const AboutPage = ({ setPage }) => (
       <div className="page-hero-bg"><img src={IMGS.aboutMission} alt="Students with hands raised"/></div>
       <div className="page-hero-overlay"/>
       <div className="page-hero-content">
-        <div className="section-label" style={{color:'#fed7aa'}}>About HS Education</div>
-        <h1 style={{fontFamily:'var(--font-display)',fontSize:'clamp(2rem,4vw,3rem)',color:'white',marginBottom:'1rem'}}>More Than a Charity — <em style={{color:'#fed7aa'}}>A Movement</em></h1>
-        <p style={{color:'rgba(255,255,255,0.82)',fontSize:'1.05rem',lineHeight:1.7}}>Founded on the belief that your postcode, background, or circumstances should never determine the quality of your education. Since 2012, we've been proving it.</p>
+        <div className="section-label" style={{color:'#065f46'}}>About HS Education</div>
+        <h1 style={{fontFamily:'var(--font-display)',fontSize:'clamp(2rem,4vw,3rem)',color:'#064e3b',marginBottom:'1rem'}}>More Than a Charity — <em style={{color:'#065f46'}}>A Movement</em></h1>
+        <p style={{color:'#065f46',fontSize:'1.05rem',lineHeight:1.7}}>Founded on the belief that your postcode, background, or circumstances should never determine the quality of your education. Since 2012, we've been proving it.</p>
       </div>
     </div>
 

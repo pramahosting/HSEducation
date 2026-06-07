@@ -18,9 +18,9 @@ const LegalPage = () => {
         <div className="page-hero-bg"><img src={IMGS.missionKids} alt="Education"/></div>
         <div className="page-hero-overlay"/>
         <div className="page-hero-content">
-          <div className="section-label" style={{color:'#fed7aa'}}>Legal & Compliance</div>
-          <h1 style={{fontFamily:'var(--font-display)',fontSize:'clamp(2rem,4vw,3rem)',color:'white',marginBottom:'1rem'}}>Legal, Compliance & <em style={{color:'#fed7aa'}}>Governance</em></h1>
-          <p style={{color:'rgba(255,255,255,0.82)',fontSize:'1.05rem'}}>HS Education is fully compliant with Australian charity law. Find our policies, registrations, and legal disclosures below.</p>
+          <div className="section-label" style={{color:'#065f46'}}>Legal & Compliance</div>
+          <h1 style={{fontFamily:'var(--font-display)',fontSize:'clamp(2rem,4vw,3rem)',color:'#064e3b',marginBottom:'1rem'}}>Legal, Compliance & <em style={{color:'#065f46'}}>Governance</em></h1>
+          <p style={{color:'#065f46',fontSize:'1.05rem'}}>HS Education is fully compliant with Australian charity law. Find our policies, registrations, and legal disclosures below.</p>
         </div>
       </div>
 

@@ -19,7 +19,7 @@ const HomePage = ({ setPage }) => (
       <div className="hero-dots"/>
       <div className="hero-inner">
         <div>
-          <div className="hero-badge">Registered Australian Charity</div>
+          <div className="hero-badge">🇦🇺 Registered Australian Charity</div>
           <h1 className="hero-title">Transforming Lives Through<br/><strong>Education & Opportunity</strong></h1>
           <p className="hero-desc">HS Education funds scholarships, learning support programs, and community initiatives to ensure every Australian student — regardless of background — has the chance to thrive.</p>
           <div className="hero-actions">
@@ -141,11 +141,11 @@ const HomePage = ({ setPage }) => (
       <div className="impact-banner-bg"><img src={IMGS.impactBanner} alt="Students raising hands"/></div>
       <div className="impact-banner-overlay"/>
       <div className="impact-banner-content">
-        <div className="section-label" style={{color:'var(--gold-light)'}}>Make a Difference Today</div>
-        <h2 style={{fontFamily:'var(--font-display)',fontSize:'clamp(1.8rem,3vw,2.6rem)',color:'white',marginBottom:'1rem'}}>
-          Every Dollar Invested in Education <em style={{color:'var(--gold-light)'}}>Changes a Life</em>
+        <div className="section-label" style={{color:'#0d7377'}}>Make a Difference Today</div>
+        <h2 style={{fontFamily:'var(--font-display)',fontSize:'clamp(1.8rem,3vw,2.6rem)',color:'#064e3b',marginBottom:'1rem'}}>
+          Every Dollar Invested in Education <em style={{color:'#0d7377'}}>Changes a Life</em>
         </h2>
-        <p style={{color:'rgba(255,255,255,0.82)',fontSize:'1.05rem',marginBottom:'2rem',lineHeight:1.7}}>
+        <p style={{color:'#065f46',fontSize:'1.05rem',marginBottom:'2rem',lineHeight:1.7}}>
           Join thousands of Australians supporting HS Education. Your tax-deductible donation funds real programs for real students right across Australia.
         </p>
         <div style={{display:'flex',gap:'1rem',justifyContent:'center',flexWrap:'wrap'}}>
