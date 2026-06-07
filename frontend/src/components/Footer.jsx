@@ -14,7 +14,7 @@ const Footer = ({ setPage }) => (
           </div>
           <p className="footer-brand">Empowering Australian learners through scholarships, literacy programs, Indigenous education, and vocational pathways.</p>
           <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.75rem', flexWrap: 'wrap' }}>
-            <div className="footer-acnc">🇦🇺 ACNC Registered</div>
+            <div className="footer-acnc">ACNC Registered</div>
             <div className="footer-acnc">✅ DGR Endorsed</div>
           </div>
           <div style={{ marginTop: '0.4rem', fontSize: '0.68rem', color: 'rgba(255,255,255,0.4)' }}>ABN: 12 345 678 901</div>
@@ -38,9 +38,9 @@ const Footer = ({ setPage }) => (
         <div>
           <div className="footer-col-title">Contact</div>
           <ul className="footer-links">
-            <li><a>📍 Level 4, 10 Spring St, Sydney NSW 2000</a></li>
+            <li><a>📍 Level 4, 11 York St, Sydney NSW 2000</a></li>
             <li><a>📧 info@hseducation.com.au</a></li>
-            <li><a>📞 (02) 8880 1234</a></li>
+            <li><a>📞 0435 064 886</a></li>
           </ul>
           <div style={{ marginTop: '0.75rem' }}>
             <div className="footer-col-title">Follow Us</div>
