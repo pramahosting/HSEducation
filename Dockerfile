@@ -1,19 +1,25 @@
 # ============================================================
 # HS Education — Dockerfile
-# Single file with two named build targets
-#
-# TARGET: frontend  → React built by Node, served by Nginx
-# TARGET: backend   → Node.js Express API
+# Single file, two named targets: frontend & backend
 #
 # Northflank settings:
-#   Both services:  Dockerfile path = Dockerfile
-#                   Build context   = . (root)
-#   Frontend:       Docker target   = frontend
-#   Backend:        Docker target   = backend
+#   Dockerfile path : Dockerfile
+#   Build context   : . (root)
+#   Frontend target : frontend
+#   Backend target  : backend
+#
+# Frontend env vars (set in Northflank):
+#   PORT=3000
+#   REACT_APP_API_URL=https://p02--hseducation--wd2sd44bwz9b.code.run
+#
+# Backend env vars (set in Northflank):
+#   PORT=5000
+#   DB_HOST, DB_PORT, DB_NAME, DB_USER, DB_PASSWORD
+#   FRONTEND_URL=https://p01--hseducation--wd2sd44bwz9b.code.run
 # ============================================================
 
 
-# ── Shared base: build React app ─────────────────────────
+# ── Stage 1: Build React app ─────────────────────────────
 FROM node:20-alpine AS react-builder
 
 WORKDIR /app
@@ -23,6 +29,11 @@ RUN npm ci --legacy-peer-deps
 
 COPY frontend/public ./public
 COPY frontend/src    ./src
+
+# REACT_APP_API_URL is passed as build arg from Northflank
+# e.g. https://p02--hseducation--wd2sd44bwz9b.code.run
+ARG REACT_APP_API_URL=http://localhost:5000
+ENV REACT_APP_API_URL=$REACT_APP_API_URL
 
 ENV NODE_ENV=production
 ENV GENERATE_SOURCEMAP=false
