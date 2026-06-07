@@ -60,9 +60,9 @@ const DonatePage = () => {
         <div className="donate-hero-bg"><img src={IMGS.donateHero} alt="Giving"/></div>
         <div className="donate-hero-overlay"/>
         <div className="donate-hero-content">
-          <div className="section-label" style={{color:'var(--gold-light)'}}>Make a Difference</div>
+          <div className="section-label" style={{color:'#fed7aa'}}>Make a Difference</div>
           <h1 style={{fontFamily:'var(--font-display)',fontSize:'clamp(2rem,4vw,3rem)',color:'white',marginBottom:'1rem'}}>
-            Donate to <em style={{color:'var(--gold-light)'}}>HS Education</em>
+            Donate to <em style={{color:'#fed7aa'}}>HS Education</em>
           </h1>
           <p style={{color:'rgba(255,255,255,0.82)',fontSize:'1.05rem',lineHeight:1.7}}>
             Your tax-deductible donation funds scholarships, learning support and community programs. All donations over $2 are fully tax-deductible.

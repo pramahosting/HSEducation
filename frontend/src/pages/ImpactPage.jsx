@@ -10,7 +10,7 @@ const ImpactPage = () => {
         <div className="page-hero-bg"><img src={IMGS.impactBanner} alt="Students in class"/></div>
         <div className="page-hero-overlay"/>
         <div className="page-hero-content">
-          <div className="section-label" style={{color:'var(--gold-light)'}}>Transparency & Impact</div>
+          <div className="section-label" style={{color:'#fed7aa'}}>Transparency & Impact</div>
           <h1 style={{fontFamily:'var(--font-display)',fontSize:'clamp(2rem,4vw,3rem)',color:'white',marginBottom:'1rem'}}>Your Trust, Our Accountability</h1>
           <p style={{color:'rgba(255,255,255,0.82)',fontSize:'1.05rem',lineHeight:1.7}}>Every dollar is tracked, every program measured, and all results published publicly. See exactly how your donations create impact.</p>
         </div>
@@ -40,7 +40,7 @@ const ImpactPage = () => {
                 <img src={IMGS.communityGroup} alt="Community programs" style={{width:'100%',height:'100%',objectFit:'cover'}}/>
                 <div style={{position:'absolute',inset:0,background:'linear-gradient(90deg,rgba(15,30,55,0.8) 0%,transparent 60%)',display:'flex',alignItems:'center',padding:'2.5rem'}}>
                   <div>
-                    <div style={{color:'var(--gold-light)',fontWeight:700,fontSize:'0.85rem',textTransform:'uppercase',letterSpacing:'0.08em',marginBottom:'0.5rem'}}>Our Reach in 2023–24</div>
+                    <div style={{color:'#fed7aa',fontWeight:700,fontSize:'0.85rem',textTransform:'uppercase',letterSpacing:'0.08em',marginBottom:'0.5rem'}}>Our Reach in 2023–24</div>
                     <div style={{fontFamily:'var(--font-display)',fontSize:'1.8rem',color:'white',marginBottom:'0.5rem'}}>47 Schools Across 6 States</div>
                     <div style={{color:'rgba(255,255,255,0.78)',fontSize:'0.95rem'}}>From metropolitan Sydney to the remote Northern Territory</div>
                   </div>
@@ -143,7 +143,7 @@ const ImpactPage = () => {
                   <h4 style={{fontFamily:'var(--font-display)',marginBottom:'1rem'}}>Complaints & Feedback</h4>
                   <p style={{fontSize:'0.88rem',color:'rgba(255,255,255,0.8)',lineHeight:1.7,marginBottom:'1rem'}}>If you have a concern about HS Education's governance, programs or conduct:</p>
                   {['Email: governance@hseducation.com.au','Write to the Chair at our registered office','Report to the ACNC at acnc.gov.au'].map(t => (
-                    <div key={t} style={{fontSize:'0.85rem',color:'rgba(255,255,255,0.75)',marginBottom:'0.5rem',display:'flex',gap:'8px'}}><span style={{color:'var(--gold-light)'}}>→</span>{t}</div>
+                    <div key={t} style={{fontSize:'0.85rem',color:'rgba(255,255,255,0.75)',marginBottom:'0.5rem',display:'flex',gap:'8px'}}><span style={{color:'#fed7aa'}}>→</span>{t}</div>
                   ))}
                 </div>
               </div>
