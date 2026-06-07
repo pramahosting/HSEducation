@@ -18,7 +18,7 @@ const AboutPage = ({ setPage }) => (
     <section className="section">
       <div className="section-inner">
         <div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'1.5rem',marginBottom:'5rem'}}>
-          {[{img:IMGS.scholarship,icon:'🎯',title:'Our Mission',text:'Break down barriers to quality education for all Australians, with focus on disadvantage, geographic isolation, and systemic inequality.'},{img:IMGS.communityGroup,icon:'🔭',title:'Our Vision',text:'An Australia where every student has equitable access to the education and support they need to reach their full potential.'},{img:IMGS.vocational,icon:'💎',title:'Our Values',text:'Integrity, transparency, cultural respect, student-centred practice, collaboration, and evidence-based impact.'}].map(({img,icon,title,text}) => (
+          {[{img:IMGS.missionKids,icon:'🎯',title:'Our Mission',text:'Break down barriers to quality education for all Australians, with focus on disadvantage, geographic isolation, and systemic inequality.'},{img:IMGS.communityGroup,icon:'🔭',title:'Our Vision',text:'An Australia where every student has equitable access to the education and support they need to reach their full potential.'},{img:IMGS.literacy,icon:'💎',title:'Our Values',text:'Integrity, transparency, cultural respect, student-centred practice, collaboration, and evidence-based impact.'}].map(({img,icon,title,text}) => (
             <div key={title} style={{background:'white',border:'1px solid var(--gray-200)',borderRadius:'16px',overflow:'hidden'}}>
               <div style={{height:'160px',overflow:'hidden'}}><img src={img} alt={title} style={{width:'100%',height:'100%',objectFit:'cover'}}/></div>
               <div style={{padding:'1.5rem',textAlign:'center'}}>
@@ -70,7 +70,7 @@ const AboutPage = ({ setPage }) => (
               <img src={IMGS.indigenous} alt="Remote community education" style={{width:'100%',height:'100%',objectFit:'cover'}}/>
             </div>
             <div style={{borderRadius:'16px',overflow:'hidden',boxShadow:'var(--shadow-md)',height:'260px'}}>
-              <img src={IMGS.vocational} alt="Vocational training" style={{width:'100%',height:'100%',objectFit:'cover'}}/>
+              <img src={IMGS.pathways} alt="Vocational training" style={{width:'100%',height:'100%',objectFit:'cover'}}/>
             </div>
           </div>
         </div>
